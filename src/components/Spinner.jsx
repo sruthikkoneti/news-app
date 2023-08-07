@@ -3,88 +3,120 @@ import './Spinner.css'
 
 function Spinner(){
     return (
-    //  <div className="loader text-center my-auto mx-auto">
-    // <div>
-    //   <ul>
-    //     <li>
-    //       <svg fill="currentColor" viewBox="0 0 90 120">
-    //         <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
-    //       </svg>
-    //     </li>
-    //     <li>
-    //       <svg fill="currentColor" viewBox="0 0 90 120">
-    //         <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
-    //       </svg>
-    //     </li>
-    //     <li>
-    //       <svg fill="currentColor" viewBox="0 0 90 120">
-    //         <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
-    //       </svg>
-    //     </li>
-    //     <li>
-    //       <svg fill="currentColor" viewBox="0 0 90 120">
-    //         <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
-    //       </svg>
-    //     </li>
-    //     <li>
-    //       <svg fill="currentColor" viewBox="0 0 90 120">
-    //         <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
-    //       </svg>
-    //     </li>
-    //     <li>
-    //       <svg fill="currentColor" viewBox="0 0 90 120">
-    //         <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
-    //       </svg>
-    //     </li>
-    //   </ul>
-    // </div><span>Loading</span></div>
-    <div class="orbit my-5">
+
+<div class="scene">
+  <div class="forest">
+    <div class="tree tree1">
+      <div class="branch branch-top"></div>
+      <div class="branch branch-middle"></div>
+    </div>
+
+    <div class="tree tree2">
+      <div class="branch branch-top"></div>
+      <div class="branch branch-middle"></div>
+      <div class="branch branch-bottom"></div>
+    </div>
+
+    <div class="tree tree3">
+      <div class="branch branch-top"></div>
+      <div class="branch branch-middle"></div>
+      <div class="branch branch-bottom"></div>
+    </div>
+
+    <div class="tree tree4">
+      <div class="branch branch-top"></div>
+      <div class="branch branch-middle"></div>
+      <div class="branch branch-bottom"></div>
+    </div>
+
+    <div class="tree tree5">
+      <div class="branch branch-top"></div>
+      <div class="branch branch-middle"></div>
+      <div class="branch branch-bottom"></div>
+    </div>
+
+    <div class="tree tree6">
+      <div class="branch branch-top"></div>
+      <div class="branch branch-middle"></div>
+      <div class="branch branch-bottom"></div>
+    </div>
+
+    <div class="tree tree7">
+      <div class="branch branch-top"></div>
+      <div class="branch branch-middle"></div>
+      <div class="branch branch-bottom"></div>
+    </div>
+  </div>
   
-  <ul class="orbit-wrap">
-    
-    <li class="orbit-center">
-      <i class="orbit-center__icon fa fa-code"></i>
-    </li>
+  <div class="tent">
+      <div class="roof"></div>
+      <div class="roof-border-left">
+        <div class="roof-border roof-border1"></div>
+        <div class="roof-border roof-border2"></div>
+        <div class="roof-border roof-border3"></div>
+      </div>
+      <div class="entrance">
+        <div class="door left-door">
+          <div class="left-door-inner"></div>
+        </div>
+        <div class="door right-door">
+          <div class="right-door-inner"></div>
+        </div>
+      </div>
+    </div>
 
-    <li>
-      <ul class="ring-0">
-        <li><i class="orbit-icon fa fa-git"></i></li>
-        <li><i class="orbit-icon fa fa-free-code-camp"></i></li>
-        <li><i class="orbit-icon fa fa-meetup"></i></li>
-        <li><i class="orbit-icon fa fa-codepen"></i></li>
-      </ul>
-    </li>
-
-    <li>
-      <ul class="ring-1">
-        <li><i class="orbit-icon fa fa-podcast"></i></li>
-        <li><i class="orbit-icon fa fa-css3"></i></li>
-        <li><i class="orbit-icon fa fa-html5"></i></li>
-      </ul>
-    </li>
-    <li>
-      <ul class="ring-2">
-        <li><i class="orbit-icon fa fa-windows"></i></li>
-        <li><i class="orbit-icon fa fa-safari"></i></li>
-        <li><i class="orbit-icon fa fa-edge"></i></li>
-        <li><i class="orbit-icon fa fa-linux"></i></li>
-        <li><i class="orbit-icon fa fa-apple"></i></li>
-        <li><i class="orbit-icon fa fa-chrome"></i></li>
-        <li><i class="orbit-icon fa fa-android"></i></li>
-        <li><i class="orbit-icon fa fa-firefox"></i></li>
-      </ul>
-    </li>
-    <li>
-      <ul class="ring-3">
-        <li><i class="orbit-icon fa fa-coffee"></i></li>
-        <li><i class="orbit-icon fa fa-terminal"></i></li>
-        <li><i class="orbit-icon fa fa-heart-o"></i></li>
-      </ul>
-    </li>
-
-  </ul>
+  <div class="floor">
+      <div class="ground ground1"></div>
+      <div class="ground ground2"></div>
+    </div>
   
+  <div class="fireplace">
+    <div class="support"></div>
+    <div class="support"></div>
+    <div class="bar"></div>
+    <div class="hanger"></div>
+    <div class="smoke"></div>
+    <div class="pan"></div>
+    <div class="fire">
+      <div class="line line1">
+        <div class="particle particle1"></div>
+        <div class="particle particle2"></div>
+        <div class="particle particle3"></div>
+        <div class="particle particle4"></div>
+      </div>
+      <div class="line line2">
+        <div class="particle particle1"></div>
+        <div class="particle particle2"></div>
+        <div class="particle particle3"></div>
+        <div class="particle particle4"></div>
+      </div>
+      <div class="line line3">
+        <div class="particle particle1"></div>
+        <div class="particle particle2"></div>
+        <div class="particle particle3"></div>
+        <div class="particle particle4"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="time-wrapper">
+    <div class="time">
+      <div class="day"></div>
+      <div class="night">
+        <div class="moon"></div>
+        <div class="star star1 star-big"></div>
+        <div class="star star2 star-big"></div>
+        <div class="star star3 star-big"></div>
+        <div class="star star4"></div>
+        <div class="star star5"></div>
+        <div class="star star6"></div>
+        <div class="star star7"></div>
+      </div>
+    </div>
+  </div>
 </div>
+
+
     )
 }
 
